@@ -1,3 +1,9 @@
+#cover-image {
+  /* aspect-ratio: 1.618; */
+  width: 90vmin;
+  position: absolute;
+}
+
 #wrapper {
   aspect-ratio: 1.618;
   width: 120vmin;
