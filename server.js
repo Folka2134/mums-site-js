@@ -10,6 +10,7 @@ const PORT = 5001;
 // Middleware
 app.set("view engine", "ejs");
 app.use(express.static("public"));
+app.use("/public/images/", express.static("./public/images"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
