@@ -62,21 +62,27 @@
 
     <!-- ABOUT/PACKAGEPREVIEW -->
 
-    <main class="h-full mx-6 md:mx-24">
+    <main class="mx-6 mb-16 md:mx-48 items-center pb-11 border-b-2 border-[#9DD9D2]">
       <div class="w-full flex flex-col text-center border-t-2 mb-16 border-[#9DD9D2]">
-        <h1 class="text-4xl my-16">About</h1>
+        <h1 class="text-4xl my-16">What we offer</h1>
         <p class="mx-16 lg:mx-44 min-[1700px]:mx-96">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quasi temporibus et eligendi nihil, consectetur natus. Odit consectetur quaerat quam officia quasi. Debitis labore laboriosam error culpa, reprehenderit consectetur commodi aliquid id facilis, quod vitae.</p>
       </div>
-      <div class="package-container flex justify-center items-center overflow-hidden">
+      <div class="package-container flex justify-center items-center overflow-hidden pb-12 border-[#9DD9D2]">
         <div id="packages">
           <% for(let i=0; i < data.length; i++) {%>
             <div class="package">
               <div class="package-content">
-                <div class="package-border">
+                <div class="package-image">
+                  <i class="<%= `fa-solid ${data[i].image}` %>"> </i>
+                </div>
+                <div class="package-info-wrapper">
                   <!-- <Link to={`packagePage/${packageInfo.id}`}> -->
-                    <div >
-                      <h1><%= data[i].title %></h1>
-                      <p><%= data[i].mini_desc %></p>
+                    <div class="package-info">
+                      <div class="package-info-title text-[#FFF8F0]">
+                        <h1><%= data[i].title %></h1>
+                        <!-- <p><%= data[i].mini_desc %></p> -->
+                        <h4>Learn to...</h4>
+                      </div>
                       <!-- <img src={data.img} alt="" /> -->
                     </div>
                   <!-- </Link> -->
@@ -90,4 +96,5 @@
 
   </body>
   <script src="./js/shapes.js"></script>
+  <script src="https://kit.fontawesome.com/5335d21866.js" crossorigin="anonymous"></script>
 </html>

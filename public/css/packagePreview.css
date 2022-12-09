@@ -1,9 +1,4 @@
 .package-container {
-  align-items: center;
-  background-color: rgb(20, 20, 20);
-  display: flex;
-  height: 100vh;
-  justify-content: center;
   margin: 0px;
   overflow: hidden;
   padding: 0px;
@@ -23,7 +18,7 @@
 }
 
 .package {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 248, 240, 0.1);
   border-radius: 10px;
   cursor: pointer;
   display: flex;
@@ -48,20 +43,20 @@
 
 .package::after {
   background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y),
-      rgba(255, 255, 255, 0.4),
+      rgba(244, 208, 111, 0.8),
       transparent 40%);
   z-index: 1;
 }
 
 .package::before {
   background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),
-      rgba(255, 255, 255, 0.06),
+      rgba(244, 208, 111, 0.5),
       transparent 40%);
   z-index: 3;
 }
 
 .package>.package-content {
-  background-color: rgb(23, 23, 23);
+  background-color: rgb(255, 136, 17);
   border-radius: inherit;
   display: flex;
   flex-direction: column;
@@ -85,10 +80,10 @@ body {
 }
 
 i {
-  color: rgb(240, 240, 240);
+  color: rgb(244, 208, 111);
 }
 
-.card-image {
+.package-image {
   align-items: center;
   display: flex;
   height: 140px;
@@ -96,12 +91,12 @@ i {
   overflow: hidden;
 }
 
-.card-image>i {
+.package-image>i {
   font-size: 6em;
   opacity: 0.25;
 }
 
-.card-info-wrapper {
+.package-info-wrapper {
   align-items: center;
   display: flex;
   flex-grow: 1;
@@ -109,25 +104,25 @@ i {
   padding: 0px 20px;
 }
 
-.card-info {
+.package-info {
   align-items: flex-start;
   display: flex;
   gap: 10px;
 }
 
-.card-info>i {
+.package-info>i {
   font-size: 1em;
   height: 20px;
   line-height: 20px;
 }
 
-.card-info-title>h3 {
+.package-info-title>h3 {
   font-size: 1.1em;
   line-height: 20px;
 }
 
-.card-info-title>h4 {
-  color: rgba(255, 255, 255, 0.5);
+.package-info-title>h4 {
+  color: rgba(0, 0, 0, 0.5);
   font-size: 0.85em;
   margin-top: 8px;
 }
