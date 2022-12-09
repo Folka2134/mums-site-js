@@ -5,8 +5,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
     <link href="/css/styles.css" rel="stylesheet" />
     <link href="/css/coverShapes.css" rel="stylesheet" />
+    <link href="/css/packagePreview.css" rel="stylesheet" />
+    <script defer src="/js/packagePreview.js" ></script>
     <title>Document</title>
   </head>
   <!-- color scheme -->
@@ -59,10 +62,29 @@
 
     <!-- ABOUT/PACKAGEPREVIEW -->
 
-    <main class="h-full flex flex-col items-center mx-6 md:mx-24 ">
-      <div class="w-full text-center border-t-2 border-[#9DD9D2]">
+    <main class="h-full mx-6 md:mx-24">
+      <div class="w-full flex flex-col text-center border-t-2 mb-16 border-[#9DD9D2]">
         <h1 class="text-4xl my-16">About</h1>
         <p class="mx-16 lg:mx-44 min-[1700px]:mx-96">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quasi temporibus et eligendi nihil, consectetur natus. Odit consectetur quaerat quam officia quasi. Debitis labore laboriosam error culpa, reprehenderit consectetur commodi aliquid id facilis, quod vitae.</p>
+      </div>
+      <div class="package-container flex justify-center items-center overflow-hidden">
+        <div id="packages">
+          <% for(let i=0; i < data.length; i++) {%>
+            <div class="package">
+              <div class="package-content">
+                <div class="package-border">
+                  <!-- <Link to={`packagePage/${packageInfo.id}`}> -->
+                    <div >
+                      <h1><%= data[i].title %></h1>
+                      <p><%= data[i].mini_desc %></p>
+                      <!-- <img src={data.img} alt="" /> -->
+                    </div>
+                  <!-- </Link> -->
+                </div>
+              </div>
+            </div>
+            <% } %>
+        </div>
       </div>
     </main>
 
