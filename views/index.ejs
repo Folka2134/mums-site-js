@@ -83,7 +83,7 @@
 
     <main
       id="about"
-      class="mx-6 pt-16 mb-16 md:mx-48 items-center pb-16 border-b-2 border-[#9DD9D2]"
+      class="mx-6 pt-24 mb-16 md:mx-48 items-center pb-16 border-b-2 border-[#9DD9D2]"
     >
       <div
         class="w-full flex flex-col text-center border-t-2 mb-16 border-[#9DD9D2]"
@@ -107,16 +107,16 @@
                 <i class="<%= `fa-solid ${data[i].image}` %>"> </i>
               </div>
               <div class="package-info-wrapper">
-                <!-- <Link to={`packagePage/${packageInfo.id}`}> -->
-                <div class="package-info">
-                  <div class="package-info-title text-[#FFF8F0]">
-                    <h1><%= data[i].title %></h1>
-                    <!-- <p><%= data[i].mini_desc %></p> -->
-                    <h4>Learn to...</h4>
+                <a href="<%= `/packagePage/${data[i].id}` %>">
+                  <div class="package-info">
+                    <div class="package-info-title text-[#FFF8F0]">
+                      <h1><%= data[i].title %></h1>
+                      <!-- <p><%= data[i].mini_desc %></p> -->
+                      <h4>Learn to...</h4>
+                    </div>
+                    <!-- <img src={data.img} alt="" /> -->
                   </div>
-                  <!-- <img src={data.img} alt="" /> -->
-                </div>
-                <!-- </Link> -->
+                </a>
               </div>
             </div>
           </div>
