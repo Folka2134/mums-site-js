@@ -101,13 +101,13 @@
       >
         <div id="packages">
           <% for(let i=0; i < data.length; i++) {%>
-          <div class="package">
-            <div class="package-content">
-              <div class="package-image">
-                <i class="<%= `fa-solid ${data[i].image}` %>"> </i>
-              </div>
-              <div class="package-info-wrapper">
-                <a href="<%= `/packagePage/${data[i].id}` %>">
+          <a href="<%= `package/${data[i].id}` %>">
+            <div class="package">
+              <div class="package-content">
+                <div class="package-image">
+                  <i class="<%= `fa-solid ${data[i].image}` %>"> </i>
+                </div>
+                <div class="package-info-wrapper">
                   <div class="package-info">
                     <div class="package-info-title text-[#FFF8F0]">
                       <h1><%= data[i].title %></h1>
@@ -116,10 +116,10 @@
                     </div>
                     <!-- <img src={data.img} alt="" /> -->
                   </div>
-                </a>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
           <% } %>
         </div>
       </div>

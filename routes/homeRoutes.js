@@ -1,10 +1,11 @@
 const express = require("express");
 const routes = express.Router();
 
-const todoController = require("../controllers/homeController");
+const homeController = require("../controllers/homeController");
 
 // GET
 // get homepage
-routes.get("/", todoController.getHomePage);
+routes.get("/", homeController.getHomePage);
+routes.get("/package/:id", homeController.getPackage);
 
 module.exports = routes;
