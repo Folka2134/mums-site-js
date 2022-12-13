@@ -606,10 +606,6 @@ video {
 .border-2 {
   border-width: 2px;
 }
-.border-y-2 {
-  border-top-width: 2px;
-  border-bottom-width: 2px;
-}
 .border-b-2 {
   border-bottom-width: 2px;
 }
@@ -652,17 +648,14 @@ video {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.pt-16 {
-  padding-top: 4rem;
+.pt-24 {
+  padding-top: 6rem;
 }
 .pb-16 {
   padding-bottom: 4rem;
 }
 .pb-12 {
   padding-bottom: 3rem;
-}
-.pt-24 {
-  padding-top: 6rem;
 }
 .text-center {
   text-align: center;
