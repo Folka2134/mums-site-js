@@ -30,7 +30,7 @@
 </div> -->
 
 <div class="h-screen flex flex-col items-center -mt-16">
-  <main class="bg-gray-200 flex mt-16 md:mt-24 rounded">
+  <main class="bg-gray-200 flex mt-16 xl:mt-24 rounded">
     <div>
       <img
         class="min-w-[360px] p-2 md:p-6"
@@ -39,11 +39,40 @@
       />
       <div class="flex flex-col md:flex-row">
         <div
-          class="md:flex-1 md:w-96 p-4 md:p-6 order-last md:order-first bg-[#FFF8F0] border-y-2 border-l-2 border-gray-200 rounded"
+          class="md:flex-1 md:w-96 p-4 md:p-6 order-last md:order-first bg-[#FFF8F0] shadow-md rounded"
         >
           <%= data.disc %>
         </div>
         <div
+          id="keys"
+          class="flex flex-col bg-[#FFF8F0] items-center shadow-md rounded"
+        >
+          <div
+            class="key w-full md:flex-initial md:w-72 text-center rounded text-white"
+          >
+            <div class="key-content p-4 md:p-5 rounded">
+              <h1
+                class="mb-2 underline decoration-[#F4D06F]/[.63] decoration-2 underline-offset-4"
+              >
+                Key Skills
+              </h1>
+              <ul
+                class="grid grid-cols-2 md:inline text-center list-disc text-white"
+              >
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+              </ul>
+            </div>
+          </div>
+          <button
+            class="w-32 z-10 my-2 p-2 bg-[#F4D06F] hover:bg-[#FF8811] rounded text-black hover:text-white transition-all duration-200"
+          >
+            Unlock
+          </button>
+        </div>
+        <!-- <div
           class="md:flex-initial md:w-72 p-4 md:p-6 text-center bg-[#FF8811] rounded text-white"
         >
           <h1
@@ -64,10 +93,10 @@
           >
             Unlock
           </button>
-        </div>
+        </div> -->
       </div>
     </div>
   </main>
 </div>
-
+<script src="/js/packageKeys.js"></script>
 <%- include('partials/footer') -%>
