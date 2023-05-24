@@ -99,7 +99,7 @@
 }
 
 .package>.package-content {
-  background-color: rgb(255, 136, 17);
+  background-color: #ffb703;
   border-radius: inherit;
   display: flex;
   flex-direction: column;
@@ -123,7 +123,7 @@ body {
 }
 
 i {
-  color: rgb(244, 208, 111);
+  color: #e5523f;
 }
 
 .package-image {
